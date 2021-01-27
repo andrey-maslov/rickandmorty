@@ -1,0 +1,86 @@
+@import '../../assets/scss/vars';
+
+.wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.content {
+  background-color: $bg-medium;
+  padding: 3rem;
+  color: $text-light;
+  border-radius: 3px;
+}
+
+.head {
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 3rem;
+  }
+}
+
+.img {
+  border-radius: 3px;
+  margin-right: 2rem;
+}
+
+.body {
+
+}
+
+.features {
+  padding-left: 0;
+  margin-bottom: 2rem;
+
+  li {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    max-width: 35rem  ;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    span {
+
+      &:first-child {
+        min-width: 6rem ;
+      }
+
+      &:last-child {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &.episodes {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    li {
+      margin-right: 1rem;
+      border-bottom: 0;
+    }
+  }
+}
+
+.status {
+  position: relative;
+  border-width: 1px;
+  border-style:solid;
+  border-color: $bg-light;
+  border-radius: 3px;
+  padding: 3px 5px;
+
+  &.Alive {
+    border-color: $success;
+  }
+  &.Dead {
+    border-color: $danger;
+  }
+}

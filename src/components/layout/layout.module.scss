@@ -1,0 +1,29 @@
+@import '../../assets/scss/vars';
+
+.logo {
+  font-size: inherit;
+
+  svg {
+    fill: #000;
+    transition: fill .2s ease-in-out;
+
+    &:hover {
+      fill: $accent;
+    }
+  }
+}
+
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(#000, .1)
+}
+
+.footer {
+  padding: 3rem 0;
+  background-color: $bg-base;
+  color: $text-light
+}
+
+.copy {
+
+}
