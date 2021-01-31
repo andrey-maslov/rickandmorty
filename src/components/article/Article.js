@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { fetchOneCharacter } from "../../actions/actionCreator";
 import style from './article.module.scss'
 
-export const Article = ({ match }) => {
+export const Article = () => {
 
     let { id } = useParams();
     const dispatch = useDispatch()
@@ -27,9 +27,9 @@ export const Article = ({ match }) => {
                         <img className={ style.img } src={ item.image } alt={ item.name } />
                         <h1>{ item.name }</h1>
                     </div>
-                    <div className={ style.body }>
+                    <div className={ style.body + ''}>
                         <h3>Common information:</h3>
-                        <ul className={ style.features }>
+                        <ul className={ style.features + ' test' }>
                             { item.status && <li>
                                 <span>Status: </span>
                                 <span

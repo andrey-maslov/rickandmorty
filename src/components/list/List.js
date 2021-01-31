@@ -16,7 +16,9 @@ export const List = () => {
 
     if (!characters || characters.length === 0) {
         return (
-            <div style={ { textAlign: 'center' } }>Loading...</div>
+            <div style={ { textAlign: 'center' } }>
+                Loading...
+            </div>
         )
     }
 
